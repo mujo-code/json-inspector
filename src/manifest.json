@@ -20,8 +20,5 @@
       "js": ["content.js"]
     }
   ],
-  "minimum_chrome_version": "88",
-  "content_security_policy": {
-    "isolated_world": "script-src 'self' 'unsafe-inline'"
-  }
+  "minimum_chrome_version": "88"
 }
