@@ -94,18 +94,18 @@ const createConfig = async () => {
      * Copy over assets to the extension build. Ignores all json, and typescript files
      */
     plugins: [
-      // new CopyPlugin({
-      //   patterns: [
-      //     {
-      //       context: paths.appRoot,
-      //       from: path.resolve(paths.appRoot, "**/*").replace(/\\/g, "/"),
-      //       globOptions: {
-      //         ignore: ["**/*.ts", "**/*.tsx", "**/*.json", "**/*.graphql"],
-      //       },
-      //       to: paths.outputDirectory,
-      //     },
-      //   ],
-      // }),
+      new CopyPlugin({
+        patterns: [
+          {
+            context: paths.appRoot,
+            from: path.resolve(paths.appRoot, "**/*").replace(/\\/g, "/"),
+            globOptions: {
+              ignore: ["**/*.ts", "**/*.tsx", "**/*.json", "**/*.graphql"],
+            },
+            to: paths.outputDirectory,
+          },
+        ],
+      }),
       /**
        * Add the version to the environment
        */

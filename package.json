@@ -1,10 +1,14 @@
 {
   "name": "json-inspector-extension",
   "version": "0.0.1",
-  "description": "A simple extension to do json inspection.",
+  "description": "A simple extension to do JSON inspection.",
   "main": "index.js",
-  "repository": "https://github.com/mujo-code/object-inspector",
+  "repository": "https://github.com/mujo-code/json-inspector",
   "license": "MIT",
+  "scripts": {
+    "start": "node scripts/watch.js",
+    "build": "node scripts/build.js"
+  },
   "dependencies": {
     "@chakra-ui/react": "^1.6.5",
     "@emotion/react": "^11",
